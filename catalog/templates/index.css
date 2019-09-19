@@ -1,0 +1,33 @@
+body {
+	background-color: grey;
+	background-size: 100% 100%;
+	background-attachment:fixed;
+	font-family: verdana;
+	text-decoration: bold;
+	//background-image:url("file:///C:/Users/HEMANTH/Desktop/images/img_forest.jpg");
+}
+
+.main {
+	height: 620px;
+	width: 500px;
+	background-color: yellow;
+
+}
+input {
+	margin-top: 30px;
+	height: 20px;
+	width: 190px;
+}
+input[type="submit"] {
+	height: 30px;
+	width: 200px;
+	background-color: brown;
+	border-radius: 0px;
+	border-collapse: collapse;
+
+
+}
+textarea {
+	margin-top: 30px;
+	resize: none ;
+}

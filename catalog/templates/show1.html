@@ -1,0 +1,49 @@
+
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>
+  
+  </h2><br><br>
+  
+  <table class="table" border=1>
+    <thead class="thead-dark">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th colspan="2">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{current_user.id}}</td>
+        <td>{{current_user.name}}</td>
+        <td>{{current_user.email}}</td>
+  
+        <td><button type="button" class="btn btn-success"><a href="{{url_for('editData',register_id=current_user.id)}}" style="color: white;">Edit</button></td>
+        <td><button type="button" class="btn btn-success"><a href="{{url_for('deleteData',register_id=current_user.id)}}" style="color: white;">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button type="button" class="btn btn-success"><a href="/" style="color: white;">GoHome</a></button>
+
+  
+
+</div>
+
+</body>
+</html>
+
